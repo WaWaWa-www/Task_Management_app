@@ -1,4 +1,3 @@
-import json
 from modules.load import load_tasks
 from modules.save import save_tasks
 from modules.display import display_tasks
@@ -10,7 +9,7 @@ def main():
     tasks = []
     tasks = load_tasks(tasks)
     while True:
-        print("\n1. タスク一覧を表示")
+        print("1. タスク一覧を表示")
         print("2. タスクを追加")
         print("3. タスクを削除")
         print("4. 終了")

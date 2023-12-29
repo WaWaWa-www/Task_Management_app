@@ -7,7 +7,6 @@ def load_tasks(tasks):
             file_content = file.read()
             if file_content:
                 tasks.extend(json.loads(file_content))
+            return tasks
     except FileNotFoundError:
-        pass
-
-    return tasks
+        return tasks
